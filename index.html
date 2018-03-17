@@ -16,7 +16,7 @@
         margin-top: 2em;
       }
 
-      #pron {
+      #hidden {
         display: none;
       }
     </style>
@@ -100,7 +100,7 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
     </nav>
 
 
-    <div class="container" id="pron">
+    <div class="container" id="hidden">
       <div class="row">
         <div class="col-md">
           <div class="card bg-danger">
@@ -155,8 +155,8 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
       $( "#google_search_form" ).submit(function( event ) {
         event.preventDefault();
         var search_input = $( "#google_search_input" ).val();
-        if (search_input === "pron") {
-          $( "#pron" ).css("display","block");
+        if (search_input === "hidden") {
+          $( "#hidden" ).css("display","block");
           $( "#google_search_input" ).val("");
           return
         }
@@ -254,74 +254,3 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
 
   </body>
 </html>
-
-
-<!--       <div class="row">
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Email</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Gmail</a>
-              <a href="#" class="list-group-item list-group-item-action">Outlook</a>
-              <a href="#" class="list-group-item list-group-item-action">iCloud</a>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Waste Time</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Reddit</a>
-              <a href="#" class="list-group-item list-group-item-action">Facebook</a>
-              <a href="#" class="list-group-item list-group-item-action">YouTube</a>
-              <a href="#" class="list-group-item list-group-item-action">Tumblr</a>
-              <a href="#" class="list-group-item list-group-item-action">Instagram</a>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Shopping</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Amazon</a>
-              <a href="#" class="list-group-item list-group-item-action">Review Meta</a>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-        <div class="row">
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Development</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Gmail</a>
-              <a href="#" class="list-group-item list-group-item-action">Outlook</a>
-              <a href="#" class="list-group-item list-group-item-action">iCloud</a>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Waste Time</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Reddit</a>
-              <a href="#" class="list-group-item list-group-item-action">Facebook</a>
-              <a href="#" class="list-group-item list-group-item-action">YouTube</a>
-              <a href="#" class="list-group-item list-group-item-action">Tumblr</a>
-              <a href="#" class="list-group-item list-group-item-action">Instagram</a>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card border-dark">
-            <h5 class="card-header">Accounts</h5>
-            <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Amazon</a>
-              <a href="#" class="list-group-item list-group-item-action">Review Meta</a>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
-
