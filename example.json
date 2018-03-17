@@ -1,0 +1,38 @@
+{
+    "Google": [{
+        "name": "Gmail",
+        "url": "https://mail.google.com/"
+        },
+        {
+        "name": "Maps",
+        "url": "https://maps.google.com"
+        },
+        {
+        "name": "Google Voice",
+        "url": "https://www.google.com/voice#inbox"
+    }],
+    "Email": [{
+        "name": "Gmail",
+        "url": "https://mail.google.com/"
+        },
+        {
+        "name": "Outlook",
+        "url": "https://outlook.live.com/"
+    }],
+    "Social": [{
+        "name": "Facebook",
+        "url": "https://www.facebook.com/"
+        },
+        {
+        "name": "Twitter",
+        "url": "https://twitter.com/"
+    }],
+    "Media": [{
+        "name": "YouTube",
+        "url": "https://www.youtube.com/"
+        },
+        {
+        "name": "Soundcloud",
+        "url": "https://soundcloud.com/stream"
+    }]
+}
