@@ -1,7 +1,23 @@
 {
+    "Main": [{
+        "name": "Reddit",
+        "url": "https://www.reddit.com/"
+        },
+        {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/"
+        },
+        {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/"
+        },
+        {
+        "name": "Dark Sky",
+        "url": "https://darksky.net/"
+    }],
     "Google": [{
         "name": "Gmail",
-        "url": "https://mail.google.com/"
+        "url": "https://mail.google.com/mail/u/0/#inbox"
         },
         {
         "name": "Maps",
@@ -11,28 +27,32 @@
         "name": "Google Voice",
         "url": "https://www.google.com/voice#inbox"
     }],
-    "Email": [{
-        "name": "Gmail",
-        "url": "https://mail.google.com/"
-        },
-        {
-        "name": "Outlook",
-        "url": "https://outlook.live.com/"
-    }],
-    "Social": [{
-        "name": "Facebook",
-        "url": "https://www.facebook.com/"
-        },
-        {
+    "Social/Media": [{
         "name": "Twitter",
         "url": "https://twitter.com/"
-    }],
-    "Media": [{
-        "name": "YouTube",
-        "url": "https://www.youtube.com/"
         },
         {
         "name": "Soundcloud",
         "url": "https://soundcloud.com/stream"
+    }],
+    "Amazon": [{
+        "name": "Amazon",
+        "url": "https://www.amazon.com/"
+        },
+        {
+        "name": "ReviewMeta",
+        "url": "http://reviewmeta.com/"
+        },
+        {
+        "name": "Goodreads",
+        "url": "https://www.goodreads.com/"
+    }],
+    "Education": [{
+        "name": "Udemy",
+        "url": "https://www.udemy.com/home/my-courses/learning/"
+        },
+        {
+        "name": "edX - CS50",
+        "url": "https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/5b52cf0573bb4c9ab8bc979e728b2446/"
     }]
 }
