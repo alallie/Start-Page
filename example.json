@@ -32,6 +32,14 @@
         "url": "https://twitter.com/"
         },
         {
+        "name": "Tumblr",
+        "url": "https://www.tumblr.com/dashboard"
+        },
+        {
+        "name": "Instagram",
+        "url": "https://www.instagram.com"
+        },
+        {
         "name": "Soundcloud",
         "url": "https://soundcloud.com/stream"
     }],
