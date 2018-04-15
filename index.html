@@ -239,13 +239,14 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
             }
           });
 
-          $( '#' + idLocation ).html(linkBodyContent);
+          $( "#" + idLocation ).html(linkBodyContent);
         });
       }
 
-      function loadContent("example.json","mainLinks","no");
-      function loadContent("hidden.json","hidden","yes");
-
+      window.onload = function() {
+        function loadContent("example.json","mainLinks","no");
+        function loadContent("hidden.json","hidden","yes");
+      };
       
 
     </script>
