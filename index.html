@@ -205,8 +205,8 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
       // });
 
 
-      var linkBodyContent = "";
       $.getJSON("example.json", function(data) {
+        var linkBodyContent = "";
         var colCounter = 0;
 
         $.each(data, function(heading, content) {
