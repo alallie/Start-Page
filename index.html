@@ -106,7 +106,7 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
           <div class="card bg-danger">
             <h5 class="card-header">Live</h5>
             <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">Chaturbate</a>
+              <a href="#" class="list-group-item list-group-item-action">test1</a>
             </ul>
           </div>
         </div>
@@ -114,8 +114,8 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
           <div class="card bg-danger">
             <h5 class="card-header">Videos</h5>
             <ul class="list-group list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action">XnXX</a>
-              <a href="#" class="list-group-item list-group-item-action">YouPorn</a>
+              <a href="#" class="list-group-item list-group-item-action">test2</a>
+              <a href="#" class="list-group-item list-group-item-action">test3</a>
             </ul>
           </div>
         </div>
@@ -205,38 +205,46 @@ iPhone Maps - https://alvarcarto.com/phone-background/generator/
       // });
 
 
-      $.getJSON("example.json", function(data) {
-        var linkBodyContent = "";
-        var colCounter = 0;
+      function loadContent(jsonLocation,idLocation,hidden) {
+        $.getJSON(jsonLocation, function(data) {
+          var linkBodyContent = "";
+          var colCounter = 0;
 
-        $.each(data, function(heading, content) {
-          // Open row
-          if (colCounter == 0) {
-            linkBodyContent += "<div class='row'>";
-          }
-
-          linkBodyContent += "<div class='col-md'>";
-          linkBodyContent += "<div class='card border-dark'>";
-          linkBodyContent += "<h5 class='card-header'>" + heading + "</h5>";
-          linkBodyContent += "<ul class='list-group list-group-flush'>";
-          $.each(content, function(index, element) {
-            linkBodyContent += "<a href='" + element.url + "' class='list-group-item list-group-item-action' target='_blank'>" + element.name + "</a>";
-          });
-          linkBodyContent += "</ul>";
-          linkBodyContent += "</div>";
-          linkBodyContent += "</div>";
-
-          colCounter++;
-
-          // Close row and reset counter
-          if (colCounter == 3) {
+          $.each(data, function(heading, content) {
+            // Open row
+            if (colCounter == 0) {
+              linkBodyContent += "<div class='row'>";
+            }
+            linkBodyContent += "<div class='col-md'>";
+            if (hidden === "yes") {
+              linkBodyContent += "<div class='card bg-danger'>";
+            } else {
+              linkBodyContent += "<div class='card border-dark'>";
+            }
+            linkBodyContent += "<h5 class='card-header'>" + heading + "</h5>";
+            linkBodyContent += "<ul class='list-group list-group-flush'>";
+            $.each(content, function(index, element) {
+              linkBodyContent += "<a href='" + element.url + "' class='list-group-item list-group-item-action' target='_blank'>" + element.name + "</a>";
+            });
+            linkBodyContent += "</ul>";
             linkBodyContent += "</div>";
-            colCounter = 0;
-          }
-        });
+            linkBodyContent += "</div>";
 
-        $( "#mainLinks" ).html(linkBodyContent);
-      });
+            colCounter++;
+
+            // Close row and reset counter
+            if (colCounter == 3) {
+              linkBodyContent += "</div>";
+              colCounter = 0;
+            }
+          });
+
+          $( "#" + idLocation ).html(linkBodyContent);
+        });
+      }
+
+      function loadContent("example.json","mainLinks","no");
+      function loadContent("hidden.json","hidden","yes");
 
       
 
