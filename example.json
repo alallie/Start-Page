@@ -1,66 +1,140 @@
 {
-    "Main": [{
-        "name": "Reddit",
-        "url": "https://www.reddit.com/"
-        },
-        {
-        "name": "Facebook",
-        "url": "https://www.facebook.com/"
-        },
-        {
-        "name": "YouTube",
-        "url": "https://www.youtube.com/"
-        },
-        {
-        "name": "Dark Sky",
-        "url": "https://darksky.net/"
-    }],
-    "Google": [{
-        "name": "Gmail",
-        "url": "https://mail.google.com/mail/u/0/#inbox"
-        },
-        {
-        "name": "Maps",
-        "url": "https://maps.google.com"
-        },
-        {
-        "name": "Google Voice",
-        "url": "https://www.google.com/voice#inbox"
-    }],
-    "Social/Media": [{
-        "name": "Twitter",
-        "url": "https://twitter.com/"
-        },
-        {
-        "name": "Tumblr",
-        "url": "https://www.tumblr.com/dashboard"
-        },
-        {
-        "name": "Instagram",
-        "url": "https://www.instagram.com"
-        },
-        {
-        "name": "Soundcloud",
-        "url": "https://soundcloud.com/stream"
-    }],
-    "Amazon": [{
-        "name": "Amazon",
-        "url": "https://www.amazon.com/"
-        },
-        {
-        "name": "ReviewMeta",
-        "url": "http://reviewmeta.com/"
-        },
-        {
-        "name": "Goodreads",
-        "url": "https://www.goodreads.com/"
-    }],
-    "Education": [{
-        "name": "Udemy",
-        "url": "https://www.udemy.com/home/my-courses/learning/"
-        },
-        {
-        "name": "edX - CS50",
-        "url": "https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/d0c88865e9434f17808f54870ea230a1/5b52cf0573bb4c9ab8bc979e728b2446/"
-    }]
+  "Google": [
+    {
+      "name": "GMail",
+      "url": "https://mail.google.com/mail/u/0/#inbox"
+    },
+    {
+      "name": "Google Maps",
+      "url": "https://maps.google.com/"
+    },
+    {
+      "name": "Google Drive",
+      "url": "https://drive.google.com"
+    },
+    {
+      "name": "Google+",
+      "url": "https://plus.google.com"
+    },
+    {
+      "name": "Google Voice",
+      "url": "https://www.google.com/voice#inbox"
+    }
+  ],
+  "Video": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://www.netflix.com"
+    },
+    {
+      "name": "Vevo",
+      "url": "https://www.vevo.com"
+    }
+  ],
+  "Social Media": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com"
+    },
+    {
+      "name": "Tumblr",
+      "url": "https://www.tumblr.com/dashboard"
+    },
+    {
+      "name": "Pintrest",
+      "url": "https://www.pinterest.com"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com"
+    }
+  ],
+  "Microsoft": [
+    {
+      "name": "Outlook",
+      "url": "https://outlook.live.com/mail/#/inbox"
+    },
+    {
+      "name": "OneDrive",
+      "url": "https://onedrive.live.com"
+    },
+    {
+      "name": "Office",
+      "url": "https://www.office.com/"
+    }
+  ],
+  "Music": [
+    {
+      "name": "Spotify",
+      "url": "https://www.spotify.com"
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com"
+    },
+    {
+      "name": "Pandora",
+      "url": "https://www.pandora.com"
+    },
+    {
+      "name": "Songsterr",
+      "url": "https://www.songsterr.com"
+    }
+  ],
+  "Shopping": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "name": "ReviewMeta",
+      "url": "https://reviewmeta.com"
+    },
+    {
+      "name": "eBay",
+      "url": "https://www.ebay.com"
+    }
+  ],
+  "Weather": [
+    {
+      "name": "Dark Sky",
+      "url": "https://darksky.net"
+    }
+  ],
+  "Reading": [
+    {
+      "name": "GoodReads",
+      "url": "https://www.goodreads.com"
+    },
+    {
+      "name": "How Long to Read This",
+      "url": "http://www.howlongtoreadthis.com"
+    }
+  ],
+  "Bookmarklets": [
+    {
+      "name": "Spritzlet",
+      "url": "javascript:(function()%7Bfunction%20loadScript()%7Bif(console%20%26%26%20typeof(console.log)===%27function%27)%7Bconsole.log(%27SpritzletInit%20v1.1.8%20-%20Loading%20https://sdk.spritzinc.com/bookmarklet/latest/js/SpritzletOuter.js%27);%7Dvar%20script=document.createElement(%27script%27);script.setAttribute(%27type%27,%27text/javascript%27);script.setAttribute(%27charset%27,%27UTF-8%27);script.setAttribute(%27async%27,%27true%27);script.setAttribute(%27src%27,%27https://sdk.spritzinc.com/bookmarklet/latest/js/SpritzletOuter.js%3F%27+(new%20Date().getTime()).toString().substring(0,7));document.documentElement.appendChild(script);setTimeout(function()%7Bif(Spritzlet.timedOut===true)%7Balert(%22Sorry,%20it%20looks%20like%20this%20site%20doesn%27t%20allow%20bookmarklets%20to%20be%20run%20or%20Spritz%20servers%20aren%27t%20responding.%22);%7D%7D,3000);script.onload=function()%7BSpritzlet.timedOut=false;var%20rs=script.readyState;if(!rs%20%7C%7C%20rs===%27loaded%27%20%7C%7C%20rs===%27complete%27)%7Bscript.onload=script.onreadystatechange=null;Spritzlet.init();%7D%7D;%7Dif(window.Spritzlet)%7BSpritzlet.activate();%7Delse%7Bwindow.Spritzlet=window.Spritzlet%20%7C%7C%7B%7D;window.Spritzlet=%7Borigin:window.location.protocol+%27//%27+window.location.host,loaderVersion:1.1,timedOut:true%7D;loadScript();%7D%7D)();"
+    },
+    {
+      "name": "Bookmarklet Creator",
+      "url": "https://mrcoles.com/bookmarklet/"
+    }
+  ]
 }
